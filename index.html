@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Pelko pois ja koodaamaan!</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <style>
+      .reveal ul { list-style: none; }
+      .reveal ul li {
+ margin-bottom: 0.3em; 
+list-style: initial;
+    list-style-type: circle;
+    background-color: #BFFFB2;
+    border-radius: 24px;
+    padding: 2px 24px;
+}
+      .reveal h3 a { text-transform: none; }
+      .reveal section img {
+        border:none; box-shadow: none;
+      }
+      .reveal img { max-height: 50vh; }
+
+      .reveal img.fix { max-height: 8em; position: absolute;}
+      .reveal img.top { top: -3em; }
+      .reveal img.left { left: 0; }
+      .reveal img.right { right: 0; }
+      .reveal img.bottom { bottom: -14em; }
+
+      .pulsing { animation-name: pulsing; animation-duration: 1s; animation-iteration-count: infinite;}
+      @keyframes pulsing {
+        0%   { transform: scale(1); }
+        50%  { transform: scale(1.5); }
+        100% { transform: scale(1); }
+      }
+
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+        <h2>Pelko pois ja koodaamaan!</h2>
+        <p>
+        <small><a href="https://twitter.com/raimohanska">Juha Paananen</a> / <a href="http://twitter.com/raimohanska">@raimohanska</a></small>
+        </p>
+        </section>
+        <section>
+        <img src="img/juha_mila.jpg">
+        </section>
+        <section>
+        <img src="img/vic20_ad.jpg">
+        </section>
+        <section>
+        <h4>ohjekirja, sivu 2</h4>
+        <img src="img/vic20-ohje.png">
+        </section>
+        <section>
+        <h1>2013</h1>
+        </section>
+        <section>
+        <img src="img/helikopteri.jpg">
+        </section>
+        <section>
+        <img src="img/tablet.jpg">
+        </section>
+        <section>
+        <h3><a href="http://girlscantcode.blogspot.fi/2013/08/lesson-2-vim.html">girlscantcode.blogspot.com</a></h3>
+        <img src="img/polygonz.jpg">
+        </section>
+        <section>
+        <h2>Tietokoneen osat</h2>
+        <img src="img/tietokoneen-osat.jpg">
+        </section>
+        <section>
+        <h2>Tiedostot, skriptaus</h2>
+        <img src="img/scriptin.jpeg">
+        </section>
+        <section>
+        <h2>Tekstieditori</h2>
+        <img src="img/vim.jpg">
+        </section>
+        <section>
+        <h2>Kiintolevyn vaihto</h2>
+        <img src="img/hd-replacement.jpg">
+        </section>
+        <section>
+        <h2>Luku- ja kirjoitustaito</h2>
+        <img src="img/pentagrammi.jpg">
+        </section>
+        <section>
+        <a href="http://turtle-roy.herokuapp.com">
+          <img src="img/turtle-roy.png">
+        </a>
+        </section>
+        <section>
+        <h2>Matematiikkaa ja geometriaa</h2>
+        <img src="img/geometriaa.jpeg">
+        </section>
+        <section>
+        <h2>Painovoima</h2>
+        <img src="img/gravity.jpg">
+        </section>
+        <section>
+        <h2>Koodikoulu Reaktorilla</h2>
+        <img src="img/reaktor-koodikoulu.jpg">
+        </section>
+        <section>
+        <h1>2014</h1>
+        </section>
+        <section>
+        <h2>Avoin Koodikoulu by Reaktor</h2>
+        <img src="img/eka-koodikoulu.jpg">
+        <p>Feat. Opetusministeri</p>
+        </section>
+        <section>
+        <h3><a href="http://koodikoulu.fi">koodikoulu.fi</a></h3>
+        <img src="img/koodikoulu.jpg">
+        </section>
+        <section>
+        <h2>Koodikouluja</h2>
+        <img src="img/koodikouluja.png">
+        <p>Ja näitähän riittää</p>
+        </section>
+        <section>
+        <h3><a href="http://koodikirja.fi">koodikirja.fi</a></h3>
+        <img src="img/koodikirja.png">
+        </section>
+        <section>
+        Koodaus tulee kouluihin?!
+        <img class="fragment" src="img/koodi2016.png">
+        </section>
+        <section>
+        <h1>2015</h1>
+        </section>
+        <section>
+        <h3><a href="http://robogem.fi">robogem.fi</a></h3>
+        <img src="img/robogem.jpg">
+        </section>
+        <section>
+          <h2>2015/10</h2>
+          <ul>
+            <li>Lapsille - koodikoulu.fi
+            <li>Iltapäiväkerhot - koodikerho.fi
+            <li>Opettajille - koodiaapinen.fi
+          </ul>
+        </section>
+        <section>
+        <h1>Tavoitteet</h1>
+        </section>
+        <section class="agenda">
+        <h1>Agenda </h1>
+<ul>
+<li>Miksi koodausta?
+<li>Sukellus koodiin
+<li>Taidot ja välineet
+<li>Ohjelmoinnin oppiminen
+<li>OPS 2016
+<li>Ryhmätyö
+</ul>
+        </section>
+        <section>
+        <h1>Miksi koodausta?</h1>
+        </section>
+
+        <section>
+        <img class="fragment top left fix" src="img/obama.jpg">
+        <img class="fragment top right fix" src="img/facebook.jpg">
+        <img class="fragment bottom left fix" src="img/tesla.jpg">
+        <img class="fragment bottom right fix" src="img/apotti.jpg">
+        </section>
+        <section>
+        Kiinnostaako lapsia?
+        </section>
+        <section>
+        <img src="img/hwo.jpg" >
+        </section>
+        <section>
+        <img src="img/messi.jpg" >
+        </section>
+        <section>
+        <img src="img/hwo3.jpg" >
+        </section>
+        <section>
+        <h3><a href="http://helloworldopen.com">helloworldopen.com</a></h3>
+        <img src="img/hwo2.jpg" >
+        </section>
+        <section>
+        <h1>Luovuus</h1>
+        <img src="img/luovuus.jpg">
+        </section>
+        <section>
+        <h1>Rakentaminen</h1>
+        <img src="img/rakentaminen.jpg">
+        </section>
+        <section>
+        <h1>Se herää eloon!</h1>
+        <img src="img/keiju.png">
+        </section>
+        <section>
+        Muita siistejä juttuja
+        </section>
+        <section>
+        <h1>Konkretiaa</h1>
+        </section>
+        <section>
+        <h1>Harjoitus ja esimerkit</h1>
+        </section>
+        <style>
+        .reveal table.steps td { 
+          vertical-align: middle;
+          border-bottom: none;
+        }
+        .reveal section .taito { 
+          background: #AFE1AF;
+          border-radius: 70px;
+          font-size: 0.7em;
+          text-align: center;
+          padding: 10px 65px;
+          width: 100%;
+          display: inline-block;
+          box-sizing: border-box;
+        }
+        .reveal table.steps tr td img {
+          margin: 0;
+          vertical-align: middle;
+        }
+        </style>
+
+        <section >
+        <table class="steps">
+          <h2>Taidot</h2>
+          <tr class="step ">
+            <td><img src="img/neliö.svg">
+            <td><span class="taito">Ongelman purkaminen osiin
+            <td><span class="code">↑↺↑↺↑↺↑↺</span>
+          <tr class="step fragment">
+            <td>&nbsp;
+            <td><span class="taito">Kaavojen tunnistaminen
+            <td><span class="code">4 (↑↺)</span>
+          <tr class="step fragment">
+            <td>&nbsp;
+            <td><span class="taito">Rakentaminen osista
+            <td><img src="img/ruudukko.svg">
+          <tr class="step fragment">
+            <td>&nbsp;
+            <td><span class="taito">Ratkaisun yleistäminen
+            <td><img src="img/ruudukko-23.svg">
+        </table>
+        
+        </section>
+<style>
+        .reveal section .väline { 
+          background: #AFD7E1;
+          border-radius: 3px;
+          font-size: 0.6em;
+          text-align: center;
+          padding: 2px 22px;
+          /* width: 190px; */
+          display: inline-block;
+          box-sizing: border-box;
+          margin: 0 20px;
+        }
+</style>
+        <section >
+        <table class="steps">
+          <h2>Taidot ja välineet</h2>
+          <tr class="step ">
+            <td><img src="img/neliö.svg">
+            <td><span class="taito">Ongelman purkaminen osiin
+            <td><span class="väline">Komentosarjat
+          <tr class="step fragment">
+            <td>&nbsp;
+            <td><span class="taito">Kaavojen tunnistaminen
+            <td><span class="väline">Toistolausekkeet
+          <tr class="step fragment">
+            <td>&nbsp;
+            <td>
+              <span class="taito">Rakentaminen osista
+            <td>
+              <span class="väline">Funktiot</span>
+              <img src="img/ruudukko.svg">
+          <tr class="step fragment">
+            <td>&nbsp;
+            <td>
+              <span class="taito">Ratkaisun yleistäminen
+            <td>
+              <span class="väline">Parametrit</span>
+              <img src="img/ruudukko-23.svg">
+          <tr class="step fragment välineet">
+            <td>&nbsp;
+            <td>&nbsp;
+            <td>
+            <span class="väline">Ehtolauseet</span><br>
+            <span class="väline">Muuttujat</span><br>
+            <span class="väline">Rekursio</span>
+        </table>
+        </section>
+        <section >
+        <table class="steps">
+          <h2>Algoritminen ajattelu</h2>
+            <td><span class="taito">Ongelman purkaminen osiin
+            <td><span class="väline">Komentosarjat
+          <tr class="step ">
+            <td><span class="taito">Kaavojen tunnistaminen
+            <td><span class="väline">Toistolausekkeet
+          <tr class="step ">
+            <td>
+              <span class="taito">Rakentaminen osista
+            <td>
+              <span class="väline">Funktiot</span>
+          <tr class="step ">
+            <td>
+              <span class="taito">Ratkaisun yleistäminen
+            <td>
+              <span class="väline">Parametrit</span>
+          <tr class="step välineet">
+            <td>&nbsp;
+            <td>
+            <span class="väline">Ehtolauseet</span><br>
+            <span class="väline">Muuttujat</span><br>
+            <span class="väline">Rekursio</span>
+        </table>
+        </section>
+        <section>
+        That's it! Questions?
+        </section>
+        <section>
+        <h1>Ohjelmoinnin oppiminen</h1>
+        <span class="fragment">taitolaji!</span>
+        </section>
+        <section>
+        <img class="fragment" src="img/languages.png" style="
+        position: absolute;
+        left: 50%;
+        transform: translateX(-297px);
+        z-index:-1;
+        ">
+        <img src="img/algoritminen-ajattelu.png" style="opacity:0.95;">
+        </section>
+        <section>
+        <h2>Ohjelmointi</h2>
+        <img src="img/ohjelmoinnin-taidot.png">
+        </section>
+        <section>
+        <h2>Turtle Roy</h2>
+        <img src="img/algoritminen-ajattelu.png">
+        <img style="transform: scale(0.6);" src="img/tunkkaus.png">
+        </section>
+        <section>
+        <h2>C++</h2>
+        <img style="transform: scale(0.6);" src="img/algoritminen-ajattelu.png">
+        <img src="img/tunkkaus.png" class="pulsing">
+        </section>
+        <section>
+        <h2>Leikit ja pelit</h2>
+        <img style="transform: scale(1.3);" src="img/algoritminen-ajattelu.png">
+        <img style="transform: scale(0.2);" src="img/tunkkaus.png">
+        </section>
+        <section>
+          <h1>Syvyys</h1>
+          <img src="img/tikku-ukko.jpeg">
+        </section>
+        <section>
+        <h1>Luovuus</h1>
+        <img src="img/luovuus.jpg">
+        </section>
+        <section>
+        <img src="img/tunkkaus-syvyys.png">
+        </section>
+        <section>
+        <img src="img/koodikoulu_new.png">
+        </section>
+        <section>
+        <h3>Koodiaapinen.fi</h3>
+        </section>
+     <section>
+<h1>OPS2016</h1> 
+</section>
+        <section>
+          <h3>OPS2016 1-2 luokka</h3>
+<ul><li>
+          <b>Matematiikka</b>
+          <q>Tutustuminen ohjelmoinnin alkeisiin alkaa laatimalla vaiheittaisia toimintaohjeita, 
+            joita myös testataan</q>
+        </section>
+        <section>
+          <h3>OPS2016 3-6 luokka</h3>
+          <ul>
+            <li>
+          <b>Matematiikka</b>
+          <q>Suunnitellaan ja toteutetaan ohjelmia graafisessa ohjelmointiympäristössä</q>
+          <li>
+          <b>Käsityö</b>
+          <q>Harjoitellaan ohjelmoimalla aikaan saatuja toimintoja, joista esimerkkinä robotiikka ja automaatio</q>
+        </ul>
+        </section>
+        <section>
+          <h3>OPS2016 7-9 luokka</h3>
+          <ul>
+            <li>
+          <b>Matematiikka</b>
+          <q>Ohjelmoidaan ja samalla harjoitellaan hyviä ohjelmointikäytäntöjä</q>
+          <li>
+          <b>Käsityö</b>
+          <q>Käytetään sulautettuja järjestelmiä käsityöhön eli sovelletaan ohjelmointia suunnitelmiin ja valmistettaviin tuotteisiin</q>
+        </ul>
+        </section>
+<section><h1>OPS käytännössä?</h1></section>
+        <style>
+          .reveal section .ops tr {
+            border: 1px solid #59A88B;
+          }
+          .reveal section .ops tr td {
+            padding: 20px 10px;
+          }
+          .reveal section .ops .taito { 
+            width: initial; 
+            margin: 5px 0;
+          }
+          .reveal section .ops .luokka {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+          }
+        </style>
+        <section >
+        <table class="steps ops">
+          <h2>OPS2016</h2>
+          <i>Taidot ja välineet<small>*</small></i>
+            <td><span class="luokka">1-2
+            <td>
+                <span class="taito">Ongelman purkaminen osiin</span>
+            <td>
+                <span class="väline">Komentosarjat</span>
+          <tr class="step ">
+            <td><span class="luokka">3-6
+            <td>
+              <span class="taito">Kaavojen tunnistaminen</span>
+              <span class="taito">Rakentaminen osista</span>
+            <td>
+              <span class="väline">Toistolausekkeet</span>
+              <span class="väline">Funktiot</span>
+          <tr class="step ">
+            <td><span class="luokka">7-9
+            <td>
+              <span class="taito">Ratkaisun yleistäminen</span>
+            <td>
+              <span class="väline">Parametrit</span>
+              <span class="väline">Ehtolauseet</span>
+              <span class="väline">Muuttujat</span>
+              <span class="väline">Rekursio</span>
+        </table>
+        <span style="
+          font-size: 0.5em;
+          position: absolute;
+          right: 0;
+          bottom: -2em;
+        ">*) Lähde: Juhan oma hiha-arvaus</span>
+        </section>
+<style>
+.reveal section table.opetusvälineet tr {
+  border: 1px solid black;
+}
+        .reveal section .opetusväline { 
+    background: hsla(53,84%,78%,1);
+    border: 3px solid #E8B52E;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    font-size: 0.6em;
+    text-align: center;
+    padding: 21px 22px;
+    /* width: 190px; */
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 20px;
+        }
+</style>
+        <section >
+        <table class="steps ops opetusvälineet">
+          <h2>OPS2016</h2>
+          <i>Opetusvälineet<small>*</small></i>
+            <td><span class="luokka">1-2
+            <td>
+              <span class="opetusväline">Koodaustunti</span>
+              <span class="opetusväline">Pelit ja leikit</span>
+          <tr class="step ">
+            <td><span class="luokka">3-6
+            <td>
+              <span class="opetusväline">Scratch</span>
+              <span class="opetusväline">Turtle Roy</span>
+          <tr class="step ">
+            <td><span class="luokka">7-9
+            <td>
+              <span class="opetusväline">HTML + Javascript</span>
+              <span class="opetusväline">Arduino</span>
+              <span class="opetusväline">Code Academy</span>
+        </table>
+        <span style="
+          font-size: 0.5em;
+          position: absolute;
+          right: 0;
+          bottom: -2em;
+        ">*) Muutama esimerkki</span>
+        </section>
+        <section>
+          <h1>Pelit ja leikit</h1>
+        </section>
+        <style>
+        .reveal section.tehtävä img {
+          height: 700px;
+          -webkit-filter: blur(10px);
+          -moz-filter: blur(10px);
+          transition: all 2s;
+        }
+        .reveal section.tehtävä.present img {
+          -webkit-filter: none;
+          -moz-filter: none;
+        }
+        </style>
+        <section class="tehtävä"> 
+          <h2>Esimerkkitehtävä</h2>
+          <img src="img/tehtävä1.png"> 
+        </section>
+        <section class="tehtävä"> 
+          <h2>Esimerkkitehtävä</h2>
+          <img src="img/hissitehtävä.png"> 
+        </section>
+        <section class="tehtävä"> 
+          <h2>Esimerkkitehtävä</h2>
+          <img src="img/tehtävä4.png"> 
+        </section>
+        <style>
+.reveal section.workshop ul {
+  text-align: center;
+  transform: rotate(720deg);
+  transition: all 1s;
+}
+.reveal section.workshop.present ul {
+  text-align: center;
+  transform: none;
+}
+.reveal section.workshop ul li {
+    padding: 20px;
+    margin: 20px;
+    background-color: #4B9CA3;
+    color: white;
+    border-radius: 4px;
+}
+        </style>
+        <section> 
+          <h1>Ryhmätyö</h1>
+        </section>
+        <section class="workshop"> 
+        <h2>Ryhmätyö</h2>
+        <ul>
+          <li>2-3 Hengen ryhmät
+          <li>Aktiviteetti / harjoitus / tehtävä
+          <li>Algoritminen ajattelu
+          <li>Kuvaus A4-arkille
+          <li>Tyyli on vapaa!
+        </ul>
+        </section>
+        <section>
+        <h1>Thanks</h1>
+        <p>
+        <small>By <a href="https://twitter.com/raimohanska">Juha Paananen</a> / <a href="http://twitter.com/raimohanska">@raimohanska</a></small>
+        </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+        ]
+        });
+
+      </script>
+
+    </body>
+  </html>
