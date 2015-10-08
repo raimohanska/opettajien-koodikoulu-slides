@@ -40,6 +40,7 @@ list-style: initial;
         border:none; box-shadow: none;
       }
       .reveal img { max-height: 50vh; }
+      .reveal img.big { max-height: 60vh; }
 
       .reveal img.fix { max-height: 8em; position: absolute;}
       .reveal img.top { top: -3em; }
@@ -51,6 +52,12 @@ list-style: initial;
       @keyframes pulsing {
         0%   { transform: scale(1); }
         50%  { transform: scale(1.5); }
+        100% { transform: scale(1); }
+      }
+      .wobble { animation-name: wobble; animation-duration: 0.5s; animation-iteration-count: infinite;}
+      @keyframes wobble {
+        0%   { transform: scale(1); }
+        50%  { transform: scale(1.3); }
         100% { transform: scale(1); }
       }
       .reveal section .ks {
@@ -124,7 +131,7 @@ list-style: initial;
         </section>
         <section>
         <a href="http://turtle-roy.herokuapp.com">
-          <img src="img/turtle-roy.png">
+          <img class="big" src="img/turtle-roy.png">
         </a>
         </section>
         <section>
@@ -230,8 +237,12 @@ list-style: initial;
         <img src="img/rakentaminen.jpg">
         </section>
         <section>
+        <h1>Rakentaminen</h1>
+        <img src="img/helikopteri.jpg">
+        </section>
+        <section>
         <h1>Se herää eloon!</h1>
-        <img src="img/keiju.png">
+        <img class="wobble" src="img/keiju.png">
         </section>
         <section>
         <h1>Konkretiaa</h1>
@@ -269,7 +280,7 @@ list-style: initial;
         <section >
         <table class="steps">
           <h2>Taidot</h2>
-          <tr class="step ">
+          <tr class="step fragment">
             <td><img src="img/neliö.svg">
             <td><span class="taito">Ongelman purkaminen osiin
             <td><span class="code">↑↺↑↺↑↺↑↺</span>
@@ -304,7 +315,7 @@ list-style: initial;
         <section >
         <table class="steps">
           <h2>Taidot ja välineet</h2>
-          <tr class="step ">
+          <tr class="step fragment">
             <td><img src="img/neliö.svg">
             <td><span class="taito">Ongelman purkaminen osiin
             <td><span class="väline">Komentosarjat
