@@ -30,11 +30,16 @@
       .reveal ul li {
  margin-bottom: 0.3em; 
 list-style: initial;
-    list-style-type: circle;
-    background-color: #BFFFB2;
+    list-style-type: none;
+    background-color: #FF5544;
+    color: white;
     border-radius: 24px;
     padding: 2px 24px;
 }
+    .reveal ul li:before {
+      content: "• ";
+      color: white; /* or whatever color you prefer */
+    }
       .reveal h3 a { text-transform: none; }
       .reveal section img {
         border:none; box-shadow: none;
@@ -148,24 +153,21 @@ list-style: initial;
         <section>
         <h2>Ensimmäinen avoin koodikoulu</h2>
         <img src="img/eka-koodikoulu.jpg">
-        <p>Mukana menossa: opetusministeri</p>
-        </section>
-        <section>
-        <h3><a href="http://koodikoulu.fi">koodikoulu.fi</a></h3>
-        <img src="img/koodikoulu.jpg">
         </section>
         <section>
         <h2>Koodikouluja</h2>
         <img src="img/koodikouluja.png">
-        <p>Ja näitähän riittää</p>
         </section>
         <section>
         <h3><a href="http://koodikirja.fi">koodikirja.fi</a></h3>
         <img src="img/koodikirja.png">
         </section>
         <section>
-        Koodaus tulee kouluihin?!
+        Koodaus tulee kouluihin
         <img class="fragment" src="img/koodi2016.png">
+        </section>
+        <section>
+        <h1>...</h1>
         </section>
         <section>
         <h1>2015</h1>
@@ -223,19 +225,12 @@ list-style: initial;
         Kiinnostaako lapsia?
         </section>
         <section>
-        <img src="img/hwo.jpg" >
-        </section>
-        <section>
         <img src="img/messi.jpg" >
         </section>
         <section>
         <img src="img/mönkijä.jpeg">
         </section>
         <section>
-        <img src="img/hwo3.jpg" >
-        </section>
-        <section>
-        <h3><a href="http://helloworldopen.com">helloworldopen.com</a></h3>
         <img src="img/hwo2.jpg" >
         </section>
         <section>
@@ -600,7 +595,6 @@ list-style: initial;
           <li>2-3 Hengen ryhmät
           <li>Aktiviteetti / harjoitus / tehtävä
           <li>Algoritminen ajattelu
-          <li>Kuvaus ja yhteystiedot A4-arkille
           <li>Tyyli on vapaa!
         </ul>
         <span class="ks"><a href="https://github.com/raimohanska/opettajien-koodikoulu">github.com/raimohanska/opettajien-koodikoulu</a></span>
